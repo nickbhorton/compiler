@@ -8,7 +8,8 @@ enum class TokenName {
     LPAREN,
     RPAREN,
     PLUS,
-    MINUS
+    MINUS,
+    INTEGER_LITERAL,
 };
 
 struct Token {

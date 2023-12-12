@@ -28,4 +28,5 @@ macro(package_add_test TESTNAME)
     set_target_properties(${TESTNAME} PROPERTIES FOLDER tests)
 endmacro()
 
-package_add_test(lexer_basic basic_lexer.cc)
+package_add_test(lexer_basic_test basic_lexer.cc)
+target_link_libraries(lexer_basic_test lexer)

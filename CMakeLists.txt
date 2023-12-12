@@ -18,7 +18,7 @@ set(INCLUDE_DIRS include/)
 include_directories(${INCLUDE_DIRS})
 
 set(LEXER_LIB_SRC src/Lexer.cc)
-set (LEXER_LIB_H include/Lexer.h include/Lexer.h) 
+set (LEXER_LIB_H include/Lexer.h include/Token.h) 
 add_library(lexer ${LEXER_LIB_SRC} ${LEXER_LIB_H})
 
 # option to build gtest tests
